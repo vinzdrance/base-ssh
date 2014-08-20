@@ -1,5 +1,5 @@
 #!/bin/bash
 if [ ! -f /.root_pw_set ]; then
-/set_root_pw.sh
+/random_root.sh
 fi
 exec /usr/sbin/sshd -D

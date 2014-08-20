@@ -11,3 +11,6 @@ RUN chmod +x /*.sh
 
 EXPOSE 22
 CMD ["/run.sh"]
+
+RUN DEBIAN_FRONTEND=noninteractive apt-get -y install fail2ban
+
